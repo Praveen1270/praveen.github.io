@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.upload-btn {
+    background: #2196F3;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px 0;
+    transition: background 0.3s;
+}
+
+.upload-btn:hover {
+    background: #1976D2;
+}
+
+.canvas-container {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    background: white;
+    margin: 20px 0;
+}
+
+#mainCanvas {
+    max-width: 100%;
+}
+
+.toolbar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}

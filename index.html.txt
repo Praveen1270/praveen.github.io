@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Free Background Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 ColorFocus</h1>
+        
+        <!-- Upload Section -->
+        <label class="upload-btn">
+            📤 Upload Image
+            <input type="file" id="imageInput" accept="image/*" hidden>
+        </label>
+
+        <!-- Canvas -->
+        <div class="canvas-container">
+            <canvas id="mainCanvas"></canvas>
+        </div>
+
+        <!-- Tools -->
+        <div class="toolbar">
+            <button onclick="setTool('brush')">🖌️ Brush</button>
+            <button onclick="setTool('eraser')">🧹 Eraser</button>
+            <button onclick="convertBackground()">⚡ Convert</button>
+            <button onclick="downloadImage()">💾 Download</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
